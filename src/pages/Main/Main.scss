@@ -1,0 +1,155 @@
+.main {
+  height: 100vh;
+
+  &__header {
+    padding: 1rem;
+
+    .connect {
+      color: #8ab2b6;
+      border: 1px solid #a2b7b9;
+      padding: 5px 15px;
+      background-color: transparent;
+      float: right;
+      width: 12rem;
+    }
+
+    .connect:hover {
+      color: #eae3e3;
+    }
+  }
+
+  &__body {
+    margin-top: 8rem;
+    padding: 1rem;
+
+    &-mint {
+      display: flex;
+      margin: auto;
+      max-width: 55rem;
+      border: 3px solid #34a0a4;
+      border-radius: 1rem;
+      padding: 1.5rem 1rem;
+      background-color: white;
+      justify-content: space-between;
+      align-items: center;
+
+      .mint-btn {
+        height: 2.5rem;
+      }
+
+      &-count {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .inc-dec {
+          font-size: 2rem;
+        }
+
+        .max {
+          position: absolute;
+          right: -5rem;
+        }
+
+        .count {
+          font-size: 2rem;
+          width: 5rem;
+          font-family: ui-monospace;
+          padding: 0 1rem;
+        }
+
+        input {
+          border: 0;
+          text-align: center;
+          outline: 0;
+        }
+      }
+
+      &-price {
+        text-align: left;
+
+        .title {
+          color: #34a0a4;
+          font-size: 1rem;
+          font-family: ui-monospace;
+        }
+
+        .price {
+          font-size: 2rem;
+          font-family: ui-monospace;
+        }
+      }
+    }
+
+    &-title {
+      font-weight: 900;
+      line-height: 1.167;
+      color: #34a0a4;
+      font-size: 4rem;
+      font-family: ui-monospace;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+
+    &-sub-title {
+      font-weight: 300;
+      line-height: 1.167;
+      color: #34a0a4;
+      font-size: 2rem;
+      font-family: monospace;
+      padding: 0;
+      margin-bottom: 1rem;
+      margin-top: 0;
+    }
+
+    &-total-sub {
+      font-weight: 300;
+      line-height: 1.167;
+      font-size: 3rem;
+      font-family: monospace;
+      padding: 0;
+    }
+
+    &-total-all {
+      font-weight: 300;
+      line-height: 1.167;
+      font-size: 2rem;
+      font-family: monospace;
+      padding: 0;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    // background-image: url('../../assets/images/bnner3.png');
+    opacity: 0.2;
+    background-repeat: round;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    width: 100vw;
+  }
+
+  &__logo {
+    margin: auto;
+
+    img {
+      width: 4rem;
+      box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+      border-radius: 50%;
+    }
+  }
+}
