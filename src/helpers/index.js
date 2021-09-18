@@ -6,7 +6,7 @@ export const truncatedText = (sourceText) => {
   }
 }
 
-export const getBigNumber = (source:any) => {
+export const getBigNumber = (source) => {
   source += '';
   const parts = source.split(".");
   let decimals = 18;
